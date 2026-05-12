@@ -1,5 +1,7 @@
 models/
 test*/
-Enterprise_data/The Colletotrichum acutatum.pdf
+Enterprise_data/*.pdf
 .vscode/
 chunk.json
+vector*/
+Qs.txt

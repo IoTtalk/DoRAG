@@ -4,7 +4,7 @@ import argparse
 import fitz  # PyMuPDF
 
 parser = argparse.ArgumentParser(description='Extract text from PDF files')
-parser.add_argument('--pdf_dir', type=str, required=True, help='Directory containing PDF files')
+parser.add_argument('--pdf_dir', type=str, default="Enterprise_data", help='Directory containing PDF files')
 parser.add_argument('--output_dir', type=str, required=True, help='Directory to save extracted text')
 args = parser.parse_args()
 
