@@ -1,6 +1,6 @@
 models/
 test*/
-Enterprise_data/*.pdf
+1_Enterprise_Data/*.pdf
 .vscode/
 chunk.json
 vector*/
