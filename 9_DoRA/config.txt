@@ -1,0 +1,27 @@
+local_dir: ./gte-Qwen2-1.5B-instruct
+out_dir: ./gte-Qwen2-1.5B-instruct-dora_260113
+with_lora: True
+rank: 32
+alpha: 64
+lora_dropout: 0.2
+dtype: bf16
+train: True
+data_path: queries_deepseek_1113.json
+group_field: chunk_id
+test_ratio: 0.05
+dev_ratio: 0.05
+seed: 127
+batch_size: 16
+grad_accum: 32
+epochs: 10
+lr_m: 0.005
+lr_lora: 5e-05
+weight_decay: 0.01
+max_grad_norm: 1.0
+task_prompt: 
+temperature: 0.05
+margin: 0.2
+lambda_hn: 0.3
+max_len: 4096
+max_len_q: None
+max_len_d: None

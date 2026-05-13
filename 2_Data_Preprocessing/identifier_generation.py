@@ -58,7 +58,7 @@ def extract_json_from_text(text: str) -> dict:
         return {"title": "", "sections": []}
 
 
-def generate_answer(text: str, model, tokenizer, temperature: float = 0.7, max_tokens: int = 2048) -> dict:
+def generate_answer(text: str, model, tokenizer, temperature: float = 0.7, max_tokens: int = 4096) -> dict:
     """Generate answer using HuggingFace model"""
     prompt = build_prompt(text)
     
